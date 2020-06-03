@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Light theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="mainSecond">#720101</item>
+        <item name="mainFirst">#004272</item>
+        <item name="mainWhite">#FFF</item>
+        <item name="mainShadowColor">#2B2B2B</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTranslation</item>
+    </style>
+
+    <!-- Dark theme -->
+    <style name="AppThemeDark" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="mainSecond">@color/mainYellow</item>
+        <item name="mainFirst">@color/mainLightBlack</item>
+        <item name="mainWhite">@color/mainWhite</item>
+        <item name="mainShadowColor">@color/mainShadowColor</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTranslation</item>
+    </style>
+
+    <style name="WindowAnimationTranslation">
+
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+
+    </style>
+
+</resources>

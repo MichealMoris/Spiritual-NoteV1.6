@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "679820752616",
+    "firebase_url": "https://spiritual-note-f8b2c.firebaseio.com",
+    "project_id": "spiritual-note-f8b2c",
+    "storage_bucket": "spiritual-note-f8b2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679820752616:android:6778484f226f681b643b5d",
+        "android_client_info": {
+          "package_name": "com.genius.spiritualnote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679820752616-5b9bljj2iam8jm9ugf9skqeshih7htgm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.genius.spiritualnote",
+            "certificate_hash": "f7b9b9bd5b2c44475f87a98a614e01c36fc28134"
+          }
+        },
+        {
+          "client_id": "679820752616-i641mpe2los049ha2v8ke2os1729jbev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkfUTg_Yyd7VlD45YnAJyHoV8RmJo-T8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679820752616-i641mpe2los049ha2v8ke2os1729jbev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

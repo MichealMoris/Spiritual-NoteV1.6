@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ds">
+        <attr name="mainFirst" format="color"/>
+        <attr name="mainSecond" format="color"/>
+        <attr name="mainWhite" format="color"/>
+        <attr name="mainShadowColor" format="color"/>
+    </declare-styleable>
+</resources>

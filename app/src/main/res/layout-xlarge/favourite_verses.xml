@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/mainFirst"
+    android:orientation="vertical"
+    tools:context=".FavouriteVerses">
+
+    <include
+        layout="@layout/favourite_verses_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/editVerseBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/editVerseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttons_background"
+                    android:text="تم"
+                    android:textColor="?attr/mainWhite"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/editVerseEdittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_background"
+                    android:ems="10"
+                    android:fontFamily="@font/amiri_regular"
+                    android:gravity="center"
+                    android:hint="تـــعــديــل الأيـــة"
+                    android:inputType="none|textPersonName"
+                    android:textColor="?attr/mainSecond"
+                    android:textColorHint="?attr/mainSecond" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addNewFavVerseBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/addVerseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttons_background"
+                    android:text="أضف"
+                    android:textColor="?attr/mainWhite"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/favVerseEdittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_background"
+                    android:ems="10"
+                    android:fontFamily="@font/amiri_regular"
+                    android:gravity="center"
+                    android:hint="ايـــــــة عـــجــــبـــتك"
+                    android:inputType="none|textPersonName"
+                    android:textColor="?attr/mainSecond"
+                    android:textColorHint="?attr/mainSecond" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/noVersesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:shadowColor="@color/mainShadowColor"
+                android:shadowDx="6"
+                android:shadowRadius="10"
+                android:text="لا يـــوجــــد أيـــــات"
+                android:textColor="?attr/mainWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/versesRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/amiri_regular"
+                android:gravity="center"
+                android:shadowColor="@color/mainShadowColor"
+                android:shadowDx="6"
+                android:shadowRadius="10"
+                android:text="@string/main_verse"
+                android:textColor="?attr/mainWhite"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewFavVerse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-2458252129119282/1239754549"></com.google.android.gms.ads.AdView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

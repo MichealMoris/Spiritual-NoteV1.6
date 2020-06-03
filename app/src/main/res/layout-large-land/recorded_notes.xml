@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/mainFirst"
+    android:orientation="vertical"
+    tools:context=".RecordedNotes">
+
+    <include
+        layout="@layout/recorded_notes_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/searchForNote"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="بحث..."
+                android:inputType="textPersonName"
+                android:shadowColor="?attr/mainShadowColor"
+                android:shadowDx="6"
+                android:shadowRadius="10"
+                android:textColor="?attr/mainSecond"
+                android:textColorHint="?attr/mainSecond"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/noNotesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:shadowColor="@color/mainShadowColor"
+                android:shadowDx="6"
+                android:shadowRadius="10"
+                android:text="لا يـــوجــــد نـــوتـــات"
+                android:textColor="?attr/mainWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/notesRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/tajawal_regular"
+                android:gravity="center"
+                android:shadowColor="@color/mainShadowColor"
+                android:shadowDx="6"
+                android:shadowRadius="10"
+                android:text="@string/main_verse"
+                android:textColor="?attr/mainWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewRecordedNotes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                app:adSize="BANNER"
+                app:adUnitId="ca-app-pub-2458252129119282/1005812646"></com.google.android.gms.ads.AdView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
