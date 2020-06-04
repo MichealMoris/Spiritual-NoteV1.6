@@ -1,6 +1,7 @@
 package com.example.spiritualnote;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationManagerCompat;
 import androidx.room.Room;
 
 import android.app.AlarmManager;
@@ -71,7 +72,7 @@ public class Home extends AppCompatActivity {
     private static final String PREF_PAUSE_TIME_KEY = "exit_time";
 
     long lastTime = System.currentTimeMillis();
-    long delay = 1000; // 1 seconds after user stops typing
+    long delay = 1500;
     long last_text_edit = 0;
     Handler handler2 = new Handler();
 
@@ -261,6 +262,10 @@ public class Home extends AppCompatActivity {
 
         if(mainSharedPrefes.wantNotification()){
             setNotification();
+        }else if (!mainSharedPrefes.wantNotification()){
+
+            cancelNotification();
+
         }
 
         checkboxesState();
@@ -301,6 +306,15 @@ public class Home extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    private void cancelNotification() {
+
+        Intent intentAlarm = new Intent(Home.this, NotificationReciever.class);
+        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+        PendingIntent pi = PendingIntent.getBroadcast(Home.this, 1, intentAlarm, PendingIntent.FLAG_UPDATE_CURRENT);
+        alarmManager.cancel(pi);
 
     }
 
