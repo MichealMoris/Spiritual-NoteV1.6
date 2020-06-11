@@ -92,7 +92,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 app:adSize="BANNER"
-                app:adUnitId="ca-app-pub-2458252129119282/1005812646"></com.google.android.gms.ads.AdView>
+                app:adUnitId="ca-app-pub-2873940201512767/8432956072"></com.google.android.gms.ads.AdView>
         </LinearLayout>
     </ScrollView>
 

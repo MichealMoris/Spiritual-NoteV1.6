@@ -185,27 +185,6 @@ public class Home extends AppCompatActivity {
                     saintImage.setImageResource(mainSharedPrefes.getSaintImage());
 
                 }
-            }else if(resumeTime - time <= 3600000 && db.notesDao().getAllNotes().size() == 0){
-                        mainSharedPrefes.setLastTime(lastTime - 86400000);
-                        Log.e("timeDiff", String.valueOf(time - resumeTime));
-                        addNotes();
-                        morningCheckBox.setChecked(false);
-                        eveningCheckBox.setChecked(false);
-                        nightCheckBox.setChecked(false);
-                        echuaristCheckBox.setChecked(false);
-                        confessCheckBox.setChecked(false);
-                        bibleCheckBox.setChecked(false);
-                        writeNotesEdittext.setText("");
-                        mainSharedPrefes.setMorningState(false);
-                        mainSharedPrefes.setEveningState(false);
-                        mainSharedPrefes.setNightState(false);
-                        mainSharedPrefes.setEchauristState(false);
-                        mainSharedPrefes.setConfessState(false);
-                        mainSharedPrefes.setBibleState(false);
-                        mainSharedPrefes.setWritedNotes("");
-                        saintOfTheDay();
-                        saintImage.setImageResource(mainSharedPrefes.getSaintImage());
-
             }
 
             // Set calendar time to same hour on next day.

@@ -80,6 +80,7 @@
         </LinearLayout>
 
     </LinearLayout>
+
     <com.google.android.gms.ads.AdView
         android:id="@+id/adViewSettings"
         android:layout_width="wrap_content"
@@ -88,7 +89,7 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-2458252129119282/9934316994"
+        app:adUnitId="ca-app-pub-2873940201512767/3180629398"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
