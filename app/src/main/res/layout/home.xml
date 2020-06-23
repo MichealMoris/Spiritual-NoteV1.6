@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home"
-    android:background="@color/mainBlue"
-    android:orientation="vertical">
+    android:background="?attr/mainFirst"
+    android:orientation="vertical"
+    tools:context=".Home">
 
 
     <include
@@ -127,5 +127,5 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-2458252129119282/7859820019"></com.google.android.gms.ads.AdView>
+        app:adUnitId="ca-app-pub-2458252129119282/7884179200"></com.google.android.gms.ads.AdView>
 </LinearLayout>

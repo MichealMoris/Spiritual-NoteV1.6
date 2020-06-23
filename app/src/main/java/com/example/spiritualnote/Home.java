@@ -301,12 +301,15 @@ public class Home extends AppCompatActivity {
     public void setNotification(){
 
         Intent intentAlarm = new Intent(Home.this, NotificationReciever.class);
+        
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         PendingIntent pi = PendingIntent.getBroadcast(Home.this, 1, intentAlarm, PendingIntent.FLAG_UPDATE_CURRENT);
+
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
         calendar.set(Calendar.HOUR_OF_DAY, 7);
         calendar.set(Calendar.MINUTE, 0);
+
         alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
                 AlarmManager.INTERVAL_DAY, pi);
 
