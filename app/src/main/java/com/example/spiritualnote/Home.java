@@ -296,22 +296,20 @@ public class Home extends AppCompatActivity {
         alarmManager.cancel(pi);
 
     }
-
-
     public void setNotification(){
-
-        Intent intentAlarm = new Intent(Home.this, NotificationReciever.class);
-        
-        AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        PendingIntent pi = PendingIntent.getBroadcast(Home.this, 1, intentAlarm, PendingIntent.FLAG_UPDATE_CURRENT);
 
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(System.currentTimeMillis());
         calendar.set(Calendar.HOUR_OF_DAY, 7);
         calendar.set(Calendar.MINUTE, 0);
 
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
-                AlarmManager.INTERVAL_DAY, pi);
+            Intent intentAlarm = new Intent(Home.this, NotificationReciever.class);
+
+            AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+            PendingIntent pi = PendingIntent.getBroadcast(Home.this, 1, intentAlarm, PendingIntent.FLAG_UPDATE_CURRENT);
+
+            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
+                    AlarmManager.INTERVAL_DAY, pi);
 
     }
     public void moveToFavVerses(){
@@ -593,8 +591,9 @@ public class Home extends AppCompatActivity {
 
         View layout = inflater.inflate(R.layout.custom_toast,
                 (ViewGroup) findViewById(R.id.custom_toast_layout_id));
+        String savedChangesText = getResources().getString(R.string.save_changes);
         TextView text = (TextView) layout.findViewById(R.id.toast_text);
-        text.setText("تم حفظ التعديلات");
+        text.setText(savedChangesText);
 
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.BOTTOM, 0, 100);

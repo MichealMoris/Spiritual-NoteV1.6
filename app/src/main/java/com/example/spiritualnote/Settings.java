@@ -113,10 +113,6 @@ public class Settings extends AppCompatActivity {
     private void restartApp() {
 
         Intent intent = new Intent(getApplicationContext(), Splash.class);
-/*        int mPendingIntentId = 20;
-        PendingIntent mPendingIntent = PendingIntent.getActivity(getApplicationContext(), mPendingIntentId, intent, PendingIntent.FLAG_CANCEL_CURRENT);
-        AlarmManager mgr = (AlarmManager) getApplicationContext().getSystemService(Context.ALARM_SERVICE);
-        mgr.setExact(AlarmManager.RTC, System.currentTimeMillis() + 10, mPendingIntent);*/
         finishAffinity();
         startActivity(intent);
 

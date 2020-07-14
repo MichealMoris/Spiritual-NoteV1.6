@@ -38,7 +38,7 @@ public class NotificationReciever extends BroadcastReceiver {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "NotificationChannel")
                 .setSmallIcon(R.mipmap.app_icon)
                 .setContentTitle("النــوتــة الــروحيــة")
-                .setContentText(randomVerse)
+                .setStyle(new NotificationCompat.BigTextStyle().bigText(randomVerse))
                 .setContentIntent(pendingIntent)
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT);
 

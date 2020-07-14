@@ -29,7 +29,7 @@
                 android:foregroundGravity="center"
                 android:gravity="center"
                 android:text="اليوم"
-                android:textColor="@color/mainRed"
+                android:textColor="?attr/mainSecond"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -54,8 +54,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:gravity="end"
-                android:text="باكر"
-                android:textColor="@color/mainRed"
+                android:text="@string/morning"
+                android:textColor="?attr/mainSecond"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -79,8 +79,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:gravity="end"
-                android:text="غروب"
-                android:textColor="@color/mainRed"
+                android:text="@string/evening"
+                android:textColor="?attr/mainSecond"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -105,8 +105,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:gravity="center"
-                android:text="نوم"
-                android:textColor="@color/mainRed"
+                android:text="@string/night"
+                android:textColor="?attr/mainSecond"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -130,8 +130,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:gravity="end"
-                android:text="تناول"
-                android:textColor="@color/mainRed"
+                android:text="@string/eucharist"
+                android:textColor="?attr/mainSecond"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -156,8 +156,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:gravity="end"
-                android:text="اعتراف"
-                android:textColor="@color/mainRed"
+                android:text="@string/confess"
+                android:textColor="?attr/mainSecond"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -181,8 +181,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:gravity="end"
-                android:text="انجيل"
-                android:textColor="@color/mainRed"
+                android:text="@string/bible"
+                android:textColor="?attr/mainSecond"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </TableRow>

@@ -2,6 +2,14 @@
     <string name="app_name">النوتة الروحية</string>
     <string name="app_slogan">طريقك الي الله</string>
     <string name="main_verse">\"فانظروا كيف تسلكون بالتدقيق لا كجهلاء بل كحكماء" أف 15:5\"</string>
+    <string name="morning">باكر</string>
+    <string name="evening">غروب</string>
+    <string name="night">نوم</string>
+    <string name="eucharist">تناول</string>
+    <string name="confess">اعتراف</string>
+    <string name="bible">انجيل</string>
+    <string name="notes">ملاحظات</string>
+    <string name="save_changes">تم حفظ التعديلات</string>
     <string-array name="notification_verses">
 
     <item>ياالله الهي اليك ابكر(مز1:63)</item>

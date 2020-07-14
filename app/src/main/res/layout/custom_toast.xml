@@ -11,6 +11,6 @@
         android:gravity="center|center_horizontal|center_vertical"
         android:textColor="?attr/mainWhite"
         android:textSize="15sp"
-        tools:text="تم حفظ العديلات" />
+        tools:text="@string/save_changes" />
 
 </LinearLayout>
